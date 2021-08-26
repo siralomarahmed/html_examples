@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Form example">
+
+    <!-- Title -->
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <h1>Contact Form</h1>
+    <form>
+        <label for="first_name">First Name:</label>
+        <input 
+            type="text" 
+            name="first_name" 
+            id="first_name" 
+            placeholder="Your first name.. ."
+        >
+        <br /><br />
+
+        <label for="last_name">Last Name:</label>
+        <input 
+            type="text" 
+            name="last_name" 
+            id="last_name" 
+            placeholder="Your last name.. ."
+        >
+        <br /><br />
+
+        <label for="last_name">Your Email:</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="sample@example.com.. ."
+        >
+        <br /><br />
+
+        <label for="message_purpose">Purpose:</label>
+        <br />
+        <label>General:</label>
+        <input 
+            type="radio" 
+            name="message_purpose" 
+            id="message_purpose"
+            value="general_message"
+            checked
+        >
+        <label>Technical:</label>
+        <input 
+            type="radio" 
+            name="message_purpose" 
+            id="message_purpose"
+            value="technical_message"
+        >
+        <br /><br />
+
+        <label for="message">Message:</label>
+        <br />
+        <textarea 
+            name="message" 
+            id="message" 
+            placeholder="Your message.. ."
+        ></textarea>
+        <br /><br />
+
+        <input type="submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
